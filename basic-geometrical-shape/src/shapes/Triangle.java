@@ -1,3 +1,5 @@
+package shapes;
+
 public class Triangle {
 
     private double width;
@@ -12,4 +14,8 @@ public class Triangle {
         return width * height / 2;
     }
 
+    public Rectangle calculateRectangle() {
+
+        return new Rectangle(width, height);
+    }
 }
