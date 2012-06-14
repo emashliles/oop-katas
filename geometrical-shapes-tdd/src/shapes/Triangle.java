@@ -1,3 +1,5 @@
+package shapes;
+
 public class Triangle {
 
     private final double width;
@@ -10,5 +12,10 @@ public class Triangle {
 
     public double calculateArea(){
                 return width * height/2;
+    }
+
+    public double[] smallestBoundingRectangle(){
+        double widthandheight[] = {width,height};
+        return widthandheight;
     }
 }
