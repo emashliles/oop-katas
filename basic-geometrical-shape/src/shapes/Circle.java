@@ -1,3 +1,5 @@
+package shapes;
+
 public class Circle {
     private double radius;
 
@@ -8,6 +10,10 @@ public class Circle {
 
     public double calculateArea() {
         return radius * radius * Math.PI;
+    }
+
+    public double calculateAreaOfSquare() {
+        return 4 * radius * radius;
     }
 
 }

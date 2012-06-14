@@ -1,3 +1,5 @@
+package shapes;
+
 public class Triangle {
 
     private double width;
@@ -9,8 +11,8 @@ public class Triangle {
         this.height = height;
     }
 
-    public double calculateArea(){
-        return width * height/2;
+    public double calculateArea() {
+        return width * height / 2;
     }
 
 }
