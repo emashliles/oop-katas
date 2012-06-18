@@ -1,6 +1,6 @@
 package shapes;
 
-public class Triangle {
+public class Triangle  {
 
     private double width;
     private double height;
