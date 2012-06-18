@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class SquareTest {
 
     @Test
-   public void calculateArea(){
+    public void calculateArea() {
         //Given
         Square square = new Square(2);
         //When
@@ -17,12 +17,13 @@ public class SquareTest {
     }
 
     @Test
-    public void calculatePerimeter()  {
+    public void calculatePerimeter() {
         //Given
         Square square = new Square(3);
         //When
         double perimeter = square.calculatePerimeter();
         //Then
         assertThat(perimeter, is(12d));
+
     }
 }
