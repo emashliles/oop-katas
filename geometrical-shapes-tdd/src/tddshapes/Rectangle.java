@@ -1,6 +1,6 @@
 package tddshapes;
 
-public class Rectangle {
+public class Rectangle implements HasArea {
     private final int height;
     private final int width;
 
@@ -9,7 +9,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public double calculator() {
+    public double calculateArea() {
         return width*height;
     }
 }
