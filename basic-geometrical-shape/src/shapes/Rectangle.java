@@ -1,8 +1,11 @@
 package shapes;
 
-public class Rectangle {
-    private final double width;
-    private final double height;
+
+
+public class Rectangle implements Shapes {
+    private double width;
+    private double height;
+
 
     public Rectangle(double width, double height) {
         this.width = width;
@@ -10,6 +13,7 @@ public class Rectangle {
     }
 
     public double calculateArea() {
+
         return height * width;
     }
 }

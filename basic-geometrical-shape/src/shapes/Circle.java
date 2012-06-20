@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*test2*/
 
 package shapes;
@@ -10,11 +11,21 @@ public class Circle {
     private double width;
 
     public Circle(double radius) {
+=======
+package shapes;
+
+public class Circle implements Shapes {
+    private double radius;
+
+    public Circle(double radius) {
+
+>>>>>>> tosin/master
         this.radius = radius;
     }
 
     public double calculateArea() {
         return radius * radius * Math.PI;
+<<<<<<< HEAD
 
     }
 
@@ -38,3 +49,14 @@ public class Circle {
         width = diameter;
     }
 }
+=======
+    }
+
+    public double calculateAreaOfSquare() {
+        return 4 * radius * radius;
+    }
+
+}
+
+
+>>>>>>> tosin/master

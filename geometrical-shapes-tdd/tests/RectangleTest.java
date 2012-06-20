@@ -10,10 +10,11 @@ public class RectangleTest {
         //Given
         Rectangle rectangle = new Rectangle(10, 5);
 
-        //When
+        //When something happens
         double area = rectangle.calculateArea();
 
-        //Then
+        //Then something happens
         assertThat(area, is(50d));
     }
+
 }
