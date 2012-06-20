@@ -1,6 +1,5 @@
 package tddshapes;
 
-
 public class Rectangle implements Shapes {
     private final double height;
     private final double width;
@@ -41,4 +40,7 @@ public class Rectangle implements Shapes {
         return result;
     }
 
+    public double calculatePerimeter() {
+        return width * 2 + height * 2;
+    }
 }

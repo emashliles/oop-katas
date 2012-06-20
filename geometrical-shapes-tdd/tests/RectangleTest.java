@@ -17,4 +17,13 @@ public class RectangleTest {
         assertThat(area, is(50d));
     }
 
+    @Test
+    public void returnPerimeter() {
+        //Given
+        Rectangle rectangle = new Rectangle(2, 4);
+        //When
+        double perimeter = rectangle.calculatePerimeter();
+        //Then
+        assertThat(perimeter, is(12d));
+    }
 }
