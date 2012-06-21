@@ -47,37 +47,7 @@ public class Employee {
         return houseName;
     }
 
-    public double calculateSalary() {
-        double salary = 0;
-        if (paymentType == "Base") {
-            if (paymentCurrency == "Dollar") {
-                salary = baseRate * dollarRate;
-            }
 
-            if (paymentCurrency == "British Pound") {
-                salary = baseRate * gbpRate;
-            }
-
-            if (paymentCurrency == "Rupee"){
-                salary = baseRate * rupeeRate;
-            }
-        }
-
-        if (paymentType == "BasePlusCommission"){
-            if (paymentCurrency == "Dollar") {
-                salary = baseRate * (1 + commissionRate) * dollarRate;
-            }
-
-            if (paymentCurrency == "British Pound") {
-                salary = baseRate * (1 + commissionRate)* gbpRate;
-            }
-
-            if (paymentCurrency == "Rupee"){
-                salary = baseRate * (1 + commissionRate)* rupeeRate;
-            }
-        }
-        return salary;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -94,4 +64,6 @@ public class Employee {
     public String getPaymentCurrency() {
         return paymentCurrency;
     }
+
+
 }
