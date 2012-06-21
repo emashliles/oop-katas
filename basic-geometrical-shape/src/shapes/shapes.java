@@ -1,6 +1,6 @@
 package shapes;
 
-public interface Shapes {
+interface Shapes {
     double calculateArea();
 
 }
