@@ -2,14 +2,14 @@ package initial;
 
 public class Employee {
     private String city;
-    private int houseNumber;
+    private String houseNumber;
     private String houseName;
     private String firstName;
     private String sureName;
     private String postCode;
     private String streetName;
 
-    public Employee(String firstName, String sureName, int houseNumber, String houseName, String streetName, String city, String postCode) {
+    public Employee(String firstName, String sureName, String houseNumber, String houseName, String streetName, String city, String postCode) {
         this.firstName = firstName;
         this.sureName = sureName;
 
@@ -20,7 +20,7 @@ public class Employee {
         this.postCode = postCode;
     }
 
-    public int getHouseNumber() {
+    public String getHouseNumber() {
         return houseNumber;
     }
 
@@ -38,5 +38,21 @@ public class Employee {
 
     public String getHouseName() {
         return houseName;
+    }
+
+    public String printAddress() {
+
+        if (postCode == " " && streetName == " ") {
+            String message = "The address is not valid";
+            return message;
+        }
+            else  {
+            return this.getHouseNumber() + "; "
+                    + this.getHouseName() + "; "
+                    + this.getStreetName() + "; "
+                    + this.getCityName()  + "; "
+                    + this.getPostCode();
+        }
+
     }
 }

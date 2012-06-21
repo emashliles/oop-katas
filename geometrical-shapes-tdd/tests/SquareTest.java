@@ -15,4 +15,3 @@ public class SquareTest {
         assertThat(areaOfSquare, is (25));
     }
 }
-                                                        1
